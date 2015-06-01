@@ -37,6 +37,12 @@ V(gg)$color=gsub(apl, "magenta3", V(gg)$color)
 V(gg)$color=gsub(phy, "lightseagreen", V(gg)$color)
 V(gg)$color=gsub(bs, "orange2", V(gg)$color)
 V(gg)$color=gsub(mse, "wheat1", V(gg)$color)
+V(gg)$color=gsub("Mind and Brain Institute", "pink3", V(gg)$color)
+V(gg)$color=gsub("Cellular and Molecular Medicine", "slateblue", V(gg)$color)
+
+V(gg)$name <- c("SS", "VC", "ML", "GM", "CC", "AS", "KY", "XL", "DL", "JK", "GD", "AK", "JK", "MK", "LY", "SS", "DB", "SH", "SM", "DO", "EC", "JC", "JV", "PJ", "KZ", "PS", "DF", "DN", "JZ", "DY", "RH", "HL", "BC", "RV", "CP", "MS", "MC", "HS", "XW", "AA", "PW", "MG", "RB", "GH", "MM", "DG", "KO", "JN", "DW")
+
+
 
 tkplot(gg, edge.width=ceiling(log(E(gg)$weight)), layout=layout.fruchterman.reingold)
 png(filename="/Users/gkiar/git/neuro-pub-graph/graphs/org_network.png", height=800, width=600)
